@@ -21,10 +21,10 @@ minetest.register_abm({
                     local owner = nil
                     if not is_protected(pos, "") then
                         --isn't protected, so block lava
-                        minetest.env:set_node(pos, {name="default:stone"})
+                        minetest.set_node(pos, {name="default:stone"})
                     end
                 else
-                    minetest.env:set_node(pos, {name="default:stone"})
+                    minetest.set_node(pos, {name="default:stone"})
                 end
             end
         end
